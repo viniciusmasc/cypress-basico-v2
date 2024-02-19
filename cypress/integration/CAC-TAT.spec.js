@@ -126,7 +126,7 @@ describe('Central de atendimento ao cliente TAT', () => {
             });
     });
 
-    it('seleciona um arquivo simulando um drag-and-drop', () => {
+    it('seleciona um arquivo utilizando uma fixture para qual foi dada um alias', () => {
         cy.fixture('documento.jpg').as('document')
         cy.get('#file-upload')
             .selectFile('@document')
