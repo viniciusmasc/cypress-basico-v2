@@ -183,7 +183,7 @@ describe('Central de atendimento ao cliente TAT', () => {
         })
     });
 
-    it.only('find the cat - v1', () => {
+    it('find the cat - v1', () => {
         cy.request({
             method: 'GET',
             url: 'https://cac-tat.s3.eu-central-1.amazonaws.com/index.html'
