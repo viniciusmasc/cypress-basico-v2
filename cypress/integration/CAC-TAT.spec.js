@@ -196,7 +196,7 @@ describe('Central de atendimento ao cliente TAT', () => {
 
     });
 
-    it.only('find the cat - v2', () => {
+    it('find the cat - v2', () => {
         cy.get('#cat')
             .invoke('show')
             .should('be.visible')
